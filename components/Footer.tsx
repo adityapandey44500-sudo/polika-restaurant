@@ -1,5 +1,5 @@
 'use client';
-import { MapPin, Phone, Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Globe, Mail, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -12,8 +12,8 @@ const Footer = () => {
               Experience the art of fine dining at Polika. Patna's most elegant pure veg restaurant serving happiness on every plate.
             </p>
             <div className="flex gap-4">
-               <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#D4AF37] transition-all"><Instagram size={18} /></a>
-               <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#D4AF37] transition-all"><Facebook size={18} /></a>
+               <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#D4AF37] transition-all"><Globe size={18} /></a>
+               <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#D4AF37] transition-all"><Mail size={18} /></a>
                <a href="https://wa.me/919162026801" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#D4AF37] transition-all"><MessageCircle size={18} /></a>
             </div>
           </div>

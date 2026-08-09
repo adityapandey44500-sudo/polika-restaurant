@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream-light: #FCF8F3;
+  --color-cream: #F9F1E7;
+  --color-cream-dark: #EADDC3;
+  --color-beige: #F5F5DC;
+  --color-beige-dark: #D2B48C;
+  --color-chocolate-light: #5D4037;
+  --color-chocolate: #3E2723;
+  --color-chocolate-dark: #26150F;
+  --color-gold: #D4AF37;
+
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-poppins), sans-serif;
+
+  --animate-fade-in: fadeIn 1s ease-out forwards;
+  --animate-slide-up: slideUp 0.8s ease-out forwards;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #FCF8F3;
+  --foreground: #3E2723;
+}
+
+.dark {
+  --background: #26150F;
+  --foreground: #FCF8F3;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), serif;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
+  .dark .glass {
+    @apply bg-chocolate/70 backdrop-blur-md border-chocolate/20;
+  }
+}

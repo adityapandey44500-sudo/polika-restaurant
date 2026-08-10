@@ -22,13 +22,13 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <div className="flex justify-center items-center gap-2 mb-6">
-             <span className="h-[1px] w-12 bg-gold" />
-             <span className="text-gold uppercase tracking-[0.3em] font-bold text-sm">Welcome to Polika</span>
-             <span className="h-[1px] w-12 bg-gold" />
+             <span className="h-[1px] w-12 bg-[#D4AF37]" />
+             <span className="text-[#D4AF37] uppercase tracking-[0.3em] font-bold text-sm">Welcome to Polika</span>
+             <span className="h-[1px] w-12 bg-[#D4AF37]" />
           </div>
           
           <h1 className="text-7xl md:text-9xl font-serif mb-8 text-white tracking-tight">
-            Fine <span className="text-gold italic">Dine</span>
+            Fine <span className="text-[#D4AF37] italic">Dine</span>
           </h1>
           
           <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto mb-12 text-gray-200">
@@ -37,10 +37,16 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <a href="#menu" className="bg-gold hover:bg-[#B8860B] text-black px-12 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-2xl">
+            <a href="#menu" className="bg-[#D4AF37] hover:bg-[#B8860B] text-black px-12 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-2xl">
               EXPLORE MENU
             </a>
-            <a href="https://wa.me/919162026801" className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white px-12 py-4 rounded-full font-bold transition-all">
+            {/* Sahi WhatsApp Number Yahan Hai */}
+            <a 
+              href="https://wa.me/917281000099" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white px-12 py-4 rounded-full font-bold transition-all flex items-center justify-center"
+            >
               BOOK A TABLE
             </a>
           </div>
@@ -50,27 +56,22 @@ const Hero = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24 max-w-5xl mx-auto">
             <div className="flex flex-col items-center gap-2">
                 <Leaf className="text-green-400" size={28} />
-                <span className="text-[10px] uppercase font-bold tracking-widest">100% Pure Veg</span>
+                <span className="text-[10px] uppercase font-bold tracking-widest text-white">100% Pure Veg</span>
             </div>
             <div className="flex flex-col items-center gap-2">
-                <PartyPopper className="text-gold" size={28} />
-                <span className="text-[10px] uppercase font-bold tracking-widest">Party Space</span>
+                <PartyPopper className="text-[#D4AF37]" size={28} />
+                <span className="text-[10px] uppercase font-bold tracking-widest text-white">Party Space</span>
             </div>
             <div className="flex flex-col items-center gap-2">
                 <GraduationCap className="text-blue-400" size={28} />
-                <span className="text-[10px] uppercase font-bold tracking-widest">Student Discount</span>
+                <span className="text-[10px] uppercase font-bold tracking-widest text-white">Student Discount</span>
             </div>
             <div className="flex flex-col items-center gap-2">
                 <Clock className="text-yellow-200" size={28} />
-                <span className="text-[10px] uppercase font-bold tracking-widest">Jain Food Available</span>
+                <span className="text-[10px] uppercase font-bold tracking-widest text-white">Jain Food Available</span>
             </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .text-gold { color: #D4AF37; }
-        .bg-gold { background-color: #D4AF37; }
-      `}</style>
     </section>
   );
 };

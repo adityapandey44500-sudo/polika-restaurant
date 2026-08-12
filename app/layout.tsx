@@ -14,14 +14,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "The Cakery Nook | Premium Bakery & Café in Patna",
-  description: "Experience freshly baked happiness at The Cakery Nook. Premium cakes, pizzas, burgers, and more in Mithapur, Patna.",
-  keywords: "bakery Patna, cakes Patna, pizza Patna, burgers Patna, Mithapur bakery, The Cakery Nook, celebration cakes",
+  title: "Polika Restaurant | QR Ordering System",
+  description: "Scan, order, and enjoy — Polika Restaurant's contactless QR-based table ordering system. Orders go straight to the kitchen and billing counter.",
+  keywords: "QR ordering, restaurant ordering system, Polika Restaurant, contactless ordering, digital menu",
   openGraph: {
-    title: "The Cakery Nook | Premium Bakery & Café in Patna",
-    description: "Experience freshly baked happiness at The Cakery Nook. Premium cakes, pizzas, burgers, and more.",
-    url: "https://thecakerynook.com",
-    siteName: "The Cakery Nook",
+    title: "Polika Restaurant | QR Ordering System",
+    description: "Scan, order, and enjoy — a contactless QR-based ordering system for restaurants.",
+    url: "https://polika-restaurant-alpha.vercel.app",
+    siteName: "Polika Restaurant",
     locale: "en_IN",
     type: "website",
   },
